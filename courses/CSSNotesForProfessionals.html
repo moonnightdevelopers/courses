@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 | PSC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/courses.css">
+
+</head>
+
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">PSC</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chapters">Chapters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#examples">Examples</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" class="shadcn-input" id="searchInput"
+                placeholder="Search for topics, code examples, or keywords...">
+            <button class="shadcn-btn" id="searchButton">
+                <i class="fas fa-search"></i>
+                Search
+            </button>
+        </div>
+    </nav>
+
+    <div class="search-results" id="searchResults">
+        <div class="results-header">
+            <div class="results-count" id="resultsCount">0 results found</div>
+            <button class="clear-search" id="clearSearch">
+                <i class="fas fa-times"></i>
+                Clear Search
+            </button>
+        </div>
+        <div id="resultsList"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <div class="container-box">
+            <h1>Getting started with CSS - Complete Reference</h1>
+            <p class="lead">An external CSS stylesheet can be applied to any number of HTML documents by placing a
+                <link> element in each
+                HTML document
+            </p>
+            <!-- About Section -->
+            <div class="row">
+                <div>
+                    <h2>About</h2>
+                    <p>The attribute rel of the
+                        <link> tag has to be set to "stylesheet", and the href attribute to the relative or absolute
+                        path to the stylesheet. While using relative URL paths is generally considered good practice,
+                        absolute paths can be
+                        used, too
+                    </p>
+                    <p>Page No: 1</p>
+                </div>
+                <!-- <div class="search-title">
+                    <i class="fas fa-search"></i>
+                    Search Content
+                </div> -->
+
+
+            </div>
+        </div>
+
+
+        <!-- Chapters Section -->
+        <div class="container-box" id="chapters">
+            <h2>Table of Contents</h2>
+
+            <!-- Chapter 1 -->
+            <div class="card chapter-card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#chapter1">
+                    <h3 class="mb-0">Chapter 1: Getting started with CSS</h3>
+                    <span class="badge bg-primary">8 Sections</span>
+                </div>
+                <div id="chapter1" class="collapse show">
+                    <div class="card-body">
+                        <ul class="contents-list">
+                            <li>
+                                <a href="#section1-1">
+                                    <span>Section 1.1: External Stylesheet</span>
+                                    <span class="page-number">Page 2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 2 -->
+            <div class="card chapter-card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#chapter2">
+                    <h3 class="mb-0">Chapter 2: Structure and Formatting of a CSS Rule </h3>
+                    <span class="badge bg-primary">9 Sections</span>
+                </div>
+                <div id="chapter2" class="collapse">
+                    <div class="card-body">
+                        <ul class="contents-list">
+                            <li>
+                                <a href="#section2-1">
+                                    <span>Section 2.1: Property Lists</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section2-2">
+                                    <span>Section 2.2: HTML 5 Doctype</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 3 -->
+            <div class="card chapter-card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#chapter3">
+                    <h3 class="mb-0">Chapter 3: Comments</h3>
+                    <span class="badge bg-primary">2 Sections</span>
+                </div>
+                <div id="chapter3" class="collapse">
+                    <div class="card-body">
+                        <ul class="contents-list">
+                            <li>
+                                <a href="#section2-1">
+                                    <span>Section 3.1: Single Line</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section2-2">
+                                    <span>Section 3.2: Multiple Line</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 4 -->
+            <div class="card chapter-card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#chapter4">
+                    <h3 class="mb-0">Chapter 4: Selectors</h3>
+                    <span class="badge bg-primary">14 Sections</span>
+                </div>
+                <div id="chapter4" class="collapse">
+                    <div class="card-body">
+                        <ul class="contents-list">
+                            <li>
+                                <a href="#sectio4-1">
+                                    <span>Section 4.1: SBasic selectors</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-2">
+                                    <span>Section 4.2: Attribute Selectors</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-3">
+                                    <span>Section 4.3: Combinators</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-4">
+                                    <span>Section 4.4:Pseudo-classes</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-5">
+                                    <span>Section 4.5: Child Pseudo Class</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-6">
+                                    <span>Section 4.6: Class Name Selectors</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-7">
+                                    <span>Section 4.7: Select element using its ID without the high specificity of the
+                                        ID selector</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-8">
+                                    <span>Section 4.8: The :last-of-type selector</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-9">
+                                    <span>Section 4.9: CSS3 :in-range selector example</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-10">
+                                    <span>Section 4.10: A. The :not pseudo-class example & B. :focus-within CSS
+                                        pseudo-class</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-11">
+                                    <span>Section 4.11: Global boolean with checkbox:checked and ~ (general sibling
+                                        combinator)</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-12">
+                                    <span>Section 4.12: ID selectors </span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-13">
+                                    <span>Section 4.13: How to style a Range input</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section4-14">
+                                    <span>Section 4.14: The :only-child pseudo-class selector example</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 5 -->
+            <div class="card chapter-card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#chapter5">
+                    <h3 class="mb-0">Chapter 5: Backgrounds </h3>
+                    <span class="badge bg-primary">13 Sections</span>
+                </div>
+                <div id="chapter5" class="collapse">
+                    <div class="card-body">
+                        <ul class="contents-list">
+                            <li>
+                                <a href="#section5-1">
+                                    <span>Section 5.1: Background Color</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-2">
+                                    <span>Section 5.2: Background Gradients</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-3">
+                                    <span>Section 5.3: Background Image</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-4">
+                                    <span>Section 5.4: Background Shorthand</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-5">
+                                    <span>Section 5.5: Background Size</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-6">
+                                    <span>Section 5.6: Background Position</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-7">
+                                    <span>Section 5.7: The background-origin property</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-8">
+                                    <span>Section 5.8: Multiple Background Image</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-9">
+                                    <span>Section 5.9: Background Attachment</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-10">
+                                    <span>Section 5.10: Background Clip</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-11">
+                                    <span>Section 5.11: Background Repeat</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-12">
+                                    <span>Section 5.12: Background-blend-mode Property</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section5-13">
+                                    <span>Section 5.13: Background Color with Opacity</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 6 -->
+            <div class="card chapter-card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#chapter6">
+                    <h3 class="mb-0">Chapter 6: Centering</h3>
+                    <span class="badge bg-primary">15 Sections</span>
+                </div>
+                <div id="chapter6" class="collapse">
+                    <div class="card-body">
+                        <ul class="contents-list">
+                            <li>
+                                <a href="#section6-1">
+                                    <span>Section 6.1: </span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-2">
+                                    <span>Section 6.2: </span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-3">
+                                    <span>Section 6.3: </span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-4">
+                                    <span>Section 6.4: </span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-5">
+                                    <span>Section 6.5: </span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-6">
+                                    <span>Section 6.6: </span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-7">
+                                    <span>Section 6.7: </span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-8">
+                                    <span>Section 6.8: </span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-9">
+                                    <span>Section 6.9: </span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-10">
+                                    <span>Section 6.10: </span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-11">
+                                    <span>Section 6.11: </span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-12">
+                                    <span>Section 6.12: </span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section6-13">
+                                    <span>Section 6.13: </span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 7 -->
+            <div class="card chapter-card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#chapter7">
+                    <h3 class="mb-0">Chapter 7: The Box Model</h3>
+                    <span class="badge bg-primary">2 Sections</span>
+                </div>
+                <div id="chapter7" class="collapse">
+                    <div class="card-body">
+                        <ul class="contents-list">
+                            <li>
+                                <a href="#section7-1">
+                                    <span>Section 7.1: What is the Box Model?</span>
+                                    <span class="page-number">Page 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section7-2">
+                                    <span>Section 7.2: box-sizing</span>
+                                    <span class="page-number">Page 13</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <hr class="mt-4 mb-4">
+        <div class="text-center">
+            <p>&copy; 2025 PSC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Hello World Canvas Example
+        document.addEventListener('DOMContentLoaded', function () {
+            const canvas = document.getElementById('helloCanvas');
+            if (canvas.getContext) {
+                const ctx = canvas.getContext('2d');
+                ctx.font = "34px serif";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.fillStyle = "#FFF";
+                ctx.fillText("Hello World", canvas.width / 2, canvas.height / 2);
+            }
+
+            // Progress Bar
+            window.onscroll = function () {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById("progressBar").style.width = scrolled + "%";
+            };
+
+            // Back to Top Button
+            document.querySelector('.back-to-top').addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Search functionality
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const searchResults = document.getElementById('searchResults');
+            const resultsList = document.getElementById('resultsList');
+            const resultsCount = document.getElementById('resultsCount');
+            const clearSearch = document.getElementById('clearSearch');
+            const chapterCards = document.querySelectorAll('.chapter-card');
+            const contentItems = document.querySelectorAll('.contents-list li');
+            const sections = document.querySelectorAll('[id^="section"]');
+
+
+
+            // Search function
+            function performSearch(query) {
+                if (!query.trim()) {
+                    return [];
+                }
+
+                const searchTerms = query.toLowerCase().split(' ').filter(term => term.length > 0);
+                const results = [];
+
+                searchData.forEach(item => {
+                    const titleMatch = item.title.toLowerCase().includes(query.toLowerCase());
+                    const contentMatch = item.content.toLowerCase().includes(query.toLowerCase());
+                    const keywordMatch = item.keywords.some(keyword =>
+                        searchTerms.some(term => keyword.toLowerCase().includes(term))
+                    );
+
+                    if (titleMatch || contentMatch || keywordMatch) {
+                        results.push({
+                            ...item,
+                            relevance: (titleMatch ? 3 : 0) + (contentMatch ? 2 : 0) + (keywordMatch ? 1 : 0)
+                        });
+                    }
+                });
+
+                // Sort by relevance
+                return results.sort((a, b) => b.relevance - a.relevance);
+            }
+
+            // Display search results
+            function displayResults(results, query) {
+                resultsList.innerHTML = '';
+
+                if (results.length === 0) {
+                    resultsList.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-search"></i>
+                            <h4>No results found</h4>
+                            <p>Try searching for different keywords or check the table of contents.</p>
+                        </div>
+                    `;
+                } else {
+                    results.forEach(result => {
+                        const resultElement = document.createElement('div');
+                        resultElement.className = 'result-item';
+                        resultElement.innerHTML = `
+                            <div class="result-title">
+                                <span>${highlightText(result.title, query)}</span>
+                                <span class="result-type">${result.type}</span>
+                            </div>
+                            <div class="result-context">
+                                ${highlightText(result.chapter, query)} • ${highlightText(result.content, query)}
+                            </div>
+                        `;
+
+                        resultElement.addEventListener('click', () => {
+                            // Scroll to the section
+                            const targetSection = document.getElementById(result.id);
+                            if (targetSection) {
+                                targetSection.scrollIntoView({ behavior: 'smooth' });
+                                // Highlight the section briefly
+                                targetSection.style.backgroundColor = '#fff3cd';
+                                setTimeout(() => {
+                                    targetSection.style.backgroundColor = '';
+                                }, 2000);
+                            }
+                        });
+
+                        resultsList.appendChild(resultElement);
+                    });
+                }
+
+                resultsCount.textContent = `${results.length} result${results.length !== 1 ? 's' : ''} found`;
+                searchResults.classList.add('active');
+            }
+
+            // Highlight matching text
+            function highlightText(text, query) {
+                if (!query.trim()) return text;
+
+                const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+                return text.replace(regex, '<span class="search-highlight">$1</span>');
+            }
+
+            // Update chapter visibility based on search
+            function updateChapterVisibility(results) {
+                const matchedSections = new Set(results.map(result => result.id.split('-').slice(0, 2).join('-')));
+
+                chapterCards.forEach(card => {
+                    const chapterId = card.querySelector('.collapse').id;
+                    const hasMatch = Array.from(matchedSections).some(sectionId =>
+                        sectionId.startsWith(chapterId.replace('chapter', 'section'))
+                    );
+
+                    if (hasMatch || results.length === 0) {
+                        card.classList.remove('search-no-match');
+                        card.classList.add('search-match');
+                    } else {
+                        card.classList.remove('search-match');
+                        card.classList.add('search-no-match');
+                    }
+                });
+            }
+
+            // Event listeners
+            searchButton.addEventListener('click', () => {
+                const query = searchInput.value.trim();
+                if (query) {
+                    const results = performSearch(query);
+                    displayResults(results, query);
+                    updateChapterVisibility(results);
+                }
+            });
+
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    searchButton.click();
+                }
+            });
+
+            clearSearch.addEventListener('click', () => {
+                searchInput.value = '';
+                searchResults.classList.remove('active');
+                chapterCards.forEach(card => {
+                    card.classList.remove('search-match', 'search-no-match');
+                });
+            });
+
+            // Focus search input when search link is clicked in navbar
+            document.querySelector('a[href="#search"]').addEventListener('click', (e) => {
+                e.preventDefault();
+                document.getElementById('search').scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    searchInput.focus();
+                }, 500);
+            });
+        });
+    </script>
+</body>
+
+</html>
